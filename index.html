@@ -6,27 +6,42 @@
     <title>to do list</title>
     <style>
         body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        margin: 0;
+             font-family: 'Arial', sans-serif;
+             background-color: #f4f4f9;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             height: 100vh;
+             margin: 0;
         }
-        .container{
-        background-color:
-        border-radius: 10px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 350px;
-        text-align: center;
+        .container {
+             background-color: #fff;
+             border-radius: 10px;
+             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+             padding: 20px;
+             width: 350px;
+             text-align: center;
+        }
+        h1 {
+            color: blue;
+            font-size: 24px;
+            margin-bottom: 20px;
+
+        }
+        button {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-    <h1>to do list</h1>
+    <h1>To Do List</h1>
     <input type="text" id="taskiput" placeholder="enter a new task">
     <button onclick="addtask()">add task</button>
     <ul id="tasklist"></ul>
