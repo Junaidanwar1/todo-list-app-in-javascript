@@ -3,7 +3,7 @@ function addtask(){
     var tasklist = document.getElementById('tasklist');
 
     if(!taskinput.value.trim()){
-        return alert("todo can not empty...")
+        return alert("todo can not be empty...")
     }
 
     var li = document.createElement('li');
